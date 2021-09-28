@@ -23,9 +23,10 @@ const RecentProjectsPreview = () => {
 
   if (newest) {
     databaseInfo = newest;
-  } else {
-    databaseInfo = fakenewest;
   }
+  // } else {
+  //   databaseInfo = fakenewest;
+  // }
 
   return (
     <>
