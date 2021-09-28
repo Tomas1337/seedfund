@@ -16,29 +16,27 @@ from .config import Config
 
 app = Flask(__name__)
 
-# Setup login manager
-login = LoginManager(app)
-login.login_view = 'auth.unauthorized'
+with app.app_context():
+    # Setup login manager
+    login = LoginManager(app)
+    login.login_view = 'auth.unauthorized'
 
+    # Tell flask about our seed commands
+    app.cli.add_command(seed_commands)
+
+    app.config.from_object(Config)
+    app.register_blueprint(pledge_routes, url_prefix='/api')
+    app.register_blueprint(project_routes, url_prefix='/api/projects')
+    app.register_blueprint(user_routes, url_prefix='/users')
+    db.init_app(app)
+    Migrate(app, db)
+
+    # Application Security
+    CORS(app)
 
 @login.user_loader
 def load_user(id):
     return User.query.get(int(id))
-
-
-# Tell flask about our seed commands
-app.cli.add_command(seed_commands)
-
-app.config.from_object(Config)
-app.register_blueprint(pledge_routes, url_prefix='/api')
-app.register_blueprint(project_routes, url_prefix='/api/projects')
-app.register_blueprint(user_routes, url_prefix='/users')
-db.init_app(app)
-Migrate(app, db)
-
-# Application Security
-CORS(app)
-
 
 @app.after_request
 def inject_csrf_token(response):
