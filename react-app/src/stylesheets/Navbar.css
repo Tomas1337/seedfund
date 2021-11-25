@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
 .navbar {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 67px;
+  /* height: 200px; */
   z-index: 1;
+  font-family: "Cormorant Garamond Regular 200";
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 .navbar li a {
@@ -18,7 +23,8 @@
   justify-content: space-between;
   background-color: #fff;
   border-color: #e8e8e8;
-  border-bottom: 0.1rem solid #dcdedd;
+  border-bottom: 0.2rem solid #4D2270;
+  min-height: 75px;
 }
 
 .navbar__searchfield-container {
@@ -129,7 +135,7 @@
   display: flex;
   align-items: center;
   color: #282828;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .navbar__navlink-start {
@@ -138,7 +144,7 @@
   display: flex;
   align-items: center;
   color: #282828;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .navbar__right-links-container {
@@ -165,13 +171,13 @@
   width: 1.5rem;
   height: 1.5rem;
   overflow: hidden;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: unset !important;
   padding-top: 0.2rem;
 }
 
 .navbar__sitename-container {
-  height: 3rem;
+  height: 5rem;
   width: 150px;
   position: relative;
   padding-top: 2.4rem !important;
@@ -186,16 +192,26 @@
   font-size: 5rem;
   font-weight: 700;
   /* color: #76a912; */
-  color: #028858;
+  color: #4D2270;
   font-family: "RNS-B";
 }
 
 .navbar__sitename-text {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-bottom: 0rem;
   text-decoration: none;
-  color: #028858;
+  color: #010002;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+
+}
+.navbar_site_logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  min-height: 40px;
 }
 
 .navbar__navlink-profile {
@@ -208,7 +224,7 @@
 .navbar__navlink-logout {
   border: none;
   background-color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #282828;
   cursor: pointer;
   text-decoration: none;

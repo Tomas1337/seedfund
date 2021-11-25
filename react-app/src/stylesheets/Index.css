@@ -14,6 +14,15 @@
 @import "ProjectEdit.css";
 @import "DiscoverPage.css";
 @import "LoadingAnimation.css";
+@import "QrGenPage.css";
+@import "ObitProfile.css";
+@import "ObitHeader.css";
+@import "ObitForm.css";
+@import "MultiStepProgressBar.css";
+@import "ObitCard.css";
+@import "TrendingObitsPreview.css";
+@import "RecentObitsPreview.css";
+
 
 html {
   font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial,

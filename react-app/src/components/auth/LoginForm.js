@@ -132,6 +132,7 @@ const LoginForm = ({ authenticated, setAuthenticated, setCurrentUser }) => {
               Log in
             </button>
             <button
+              id = "demo-login"
               className="login-form__submit-button demo-button"
               type="submit"
               onClick={logInDemo}

@@ -31,6 +31,27 @@ export const getPledgeCount = async (id) => {
 
 };
 
+export const getDonationCount = async (id) => {
+
+  const res = await fetch(`/api/obits/${id}/donations`, {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  if (!res.ok) {
+    throw res;
+  }
+
+  const data = await res.json();
+  if(data) {
+
+    const totalDonation = data.donations.length;
+    return totalDonation;
+  }
+
+
+};
 export const getCreatorName = async (id) => {
   const res = await fetch(`/users/${id}`, {
     headers: {

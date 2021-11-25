@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
+.obit-profile-page__container {
+    position: relative;
+    min-height: 833px;
+    height: 200vh;
+    background: #f7f7f6;
+    /* padding-top: 67px; */
+  }
+  
+  .obit-profile-page__main {
+    background-color: #f7f7f6;
+    padding-bottom: 0px;
+    height: 100%;
+  }
+  
+  .obit-profile-page__main-container {
+    display: grid;
+    grid-template-areas:
+      "message message message message message message message"
+      "image image image image info info info"
+      "long_message long_message long_message long_message info info info";
+    grid-template-columns: repeat(7 , 1fr);
+    grid-template-rows: 380px 400px 100px;
+    grid-gap:10px;
+    padding: 5px auto;
+    background-color: #ffffff;
+    border-top: 1px solid #f1eeea;
+    height: 100%;
+  }
+  
+  .obit-profile-page__header {
+    grid-area: message;
+    display: block;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* padding-top: 2.5rem; */
+    /* margin-top: 0rem; */
+    /* margin-bottom: 3.6rem; */
+    /* margin-left: -18px;
+    margin-right: -18px;
+    padding-left: 18px;
+    padding-right: 18px; */
+    /* makes sure the header will size appropriately no matter size of page */
+    position: relative;
+    float: left;
+    width: calc(12 / 12 * 100%) !important;
+    align-content: center;
+    max-height: 0px;
+    padding-top: 33px;
+    border: 1px solid #4D2270;
+  }
+  
+  .obit-profile-page__header-title {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: #282828;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  
+  .obit-profile-page__header-description {
+    margin-bottom: 0.6rem;
+    color: #282828;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+  }
+
+  
+  .obit-profile-page__image {
+    max-width: 620px;
+    height: 362px;
+    background-color: #F0F0F0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .obit-profile-page__category {
+    margin-bottom: 0rem;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    text-decoration: none;
+    color: #656969;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  
+  .obit-profile-page__creator {
+    margin-bottom: 0rem;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    text-decoration: none;
+    color: #656969;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .obit-profile-page__info-container {
+    grid-area: info;
+    color: #4D2270;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 -20px 0 18px;
+    float: left;
+    position: relative;
+    max-width: 350px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .obit-profile-page__progress-bar {
+    width: 100%;
+    margin-bottom: 1.8rem;
+    background-color: #e8e8e8;
+  }
+  
+  .obit-profile-page__progress-color {
+    height: 0.6rem;
+    background-color: #4D2270;
+  }
+  .obit-profile-page__info-container-stats {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    flex-direction: column;
+  }
+  
+  .obit-profile-page__balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+    white-space: nowrap;
+  }
+  
+  .obit-profile-page__info-container h1 {
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: -5px;
+    align-items: center;
+  }
+  
+  .obit-profile-page__info-container p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #656969;
+  }
+  .obit-profile-page__backer-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+    white-space: nowrap;
+  }
+  
+  .obit-profile-page__goal-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  
+  .obit-profile-page__form {
+    margin-bottom: 15px;
+  }
+  
+  .obit-profile-page__input-field {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    width: 100%;
+  }
+  
+  .obit-profile-page__input-field:focus {
+    border-color: #009e74;
+    transition: all 300ms;
+    outline: 0;
+    border-radius: 2px;
+  }
+  
+  .obit-profile-page__button {
+    box-sizing: border-box;
+    background-color: #4D2270;
+    border: 1px solid #4D2270;
+    color: white;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0px 1px;
+    width: 100%;
+    border-radius: 2px;
+    font-family: "Cormorant Garamond Semi-bold 600";
+  }
+  
+  .obit-profile-page__obit-management {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .obit-profile-page__edit-button {
+    box-sizing: border-box;
+    background-color: #4D2270;
+    border: 1px solid #4D2270;
+    color: white;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0px 1px;
+    width: 40%;
+    border-radius: 2px;
+    padding: 1px;
+    font-family: "Cormorant Garamond Semi-bold 600";
+    font-size: 16px;
+  
+  }
+  
+  .obit-profile-page__delete-button {
+    box-sizing: border-box;
+    background-color: #4D2270;
+    border: 1px solid #4D2270;
+    color: white;
+    height: 35px;
+    letter-spacing: 1px;
+    margin: 0px 1px;
+    width: 40%;
+    border-radius: 2px;
+    padding: 1px;
+    font-family: "Cormorant Garamond Semi-bold 600";
+    font-size: 16px;
+  }
+
+.obit-profile-page__guestbook-button {
+  box-sizing: border-box;
+  background-color: #4D2270;
+  border: 1px solid #4D2270;
+  color: white;
+  height: 35px;
+  letter-spacing: 1px;
+  margin: 0px 1px;
+  width: 100%;
+  border-radius: 2px;
+  padding: 1px;
+  font-family: "Cormorant Garamond Semi-bold 600";
+  font-size: 16px;
+}
+
+.obit-profile-page__novena-button {
+  box-sizing: border-box;
+  background-color: #4D2270;
+  border: 1px solid #4D2270;
+  color: white;
+  height: 35px;
+  letter-spacing: 1px;
+  margin: 0px 1px;
+  width: 100%;
+  border-radius: 2px;
+  padding: 1px;
+  font-family: "Cormorant Garamond Semi-bold 600";
+  font-size: 16px;
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+}
+  
+.obit-message-wrapper {
+  position: absolute;
+  align-items: center;
+  vertical-align: top;
+  
+}
+
+.obit-header-wrapper {
+  position: relative;
+  align-content: center;
+  vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 120px;
+}
+
+.obit-header-image {
+  position: absolute;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  padding-top: 10px;
+  max-height: 300px;
+}
+
+.obit-profile-long_message-container{
+  display: block;
+  grid-area: long_message;
+  margin: 0 auto;
+  align-items: right;
+  
+}
+
+.obit-profile-long_message-wrapper {
+  display: block;
+  max-width: 620px;
+  /* min-height: 400px; */
+  float: right;
+  font-family: "Cormorant Garamond Regular 400";
+  font-size: 22px;
+  justify-content: center;
+}
+
+.obit-profile-page__image-container {
+  display: block;
+  grid-area: image;
+  margin: 0 auto;
+  align-items: right;
+  
+  /* float: right;
+  position: relative; */
+}
+
+.obit-profile-page__image-wrapper {
+  display: block;
+  min-width: 620px;
+  /* min-height: 400px; */
+  float: right;
+  justify-content: stretch;
+}

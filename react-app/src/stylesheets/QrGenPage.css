@@ -1,0 +1,23 @@
+.donation-button {
+    box-sizing: border-box;
+    background-color: #028858;
+    border: 1px solid #028858;
+    color: white;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+.donation-text {
+  background: red;
+  color: #fff;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.qr_generation-form {
+  background: red;
+  vertical-align: middle;
+  margin-left: 500px;
+  
+}

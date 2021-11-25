@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Ephesis');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
+.obit-profile-header__headText {
+    position: relative;
+    /* background: #4D2270; */
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: "Cormorant Garamond";
+    font-weight: 50;
+    font-style: italic;
+  }
+
+.obit-profile-header__shortText {
+    position: relative;
+    /* background: #4D2270; */
+    padding-top: 0px;
+    padding-bottom: 35px;
+    font-size: 30px;
+    font-family: "Cormorant Garamond";
+    font-weight: 50;
+    font-style: italic;
+  }
+
+.obit-profile-header__wrapper {
+    position: relative;
+    min-height: 100px;
+    background: #ffffff;
+    align-items: center;
+    text-align: center;
+    border-bottom: solid #4D2270;
+    border-bottom-width: 2px;
+    
+  }
+
+.obit-profile-header_nameText {
+  position: relative;
+  font-size: 90px;
+  font-family: "Great Vibes";
+  font-weight: 800;
+  color:#4D2270;
+  
+}

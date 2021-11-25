@@ -2,6 +2,7 @@ from flask import Blueprint, jsonify, redirect, request
 from datetime import datetime, timedelta
 from app.models import db, Project, Pledge, User
 from app.forms.project_form import ProjectForm
+from app.forms.obit_form import ObitForm
 from sqlalchemy.orm import joinedload
 
 pledge_routes = Blueprint('pledges', __name__)

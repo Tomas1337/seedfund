@@ -161,9 +161,7 @@ const ProjectProfile = (props) => {
 
   useEffect(() => {
     let mounted = true;
-
     const hideSpinner = () => spinnerRef.current.classList.add('loadSpinner--hide');
-
     if (mounted) {
       setTimeout(() => {
         hideSpinner()

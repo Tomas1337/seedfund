@@ -1,0 +1,43 @@
+.recent-obits {
+  display: block;
+  position: relative;
+
+}
+
+.recent-obits__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-bottom: 165px;
+  padding-top: 10px;
+}
+
+.recent-obits__header {
+  padding-top: 1.2rem;
+  margin-bottom: 3rem;
+  padding-left: 5.5rem;
+  font-weight: 400;
+  box-sizing: inherit;
+}
+
+.recent-obits__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 640px) {
+  .recent-obits__header {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}

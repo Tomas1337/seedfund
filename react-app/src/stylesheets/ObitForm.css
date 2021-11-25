@@ -1,0 +1,181 @@
+
+
+.new-obit-page__main-container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  /* background-color: #f7f7f6; */
+  vertical-align: baseline;
+  /* padding: 60px 18px; */
+  /* height: 100vh; */
+  min-height: 1200px;
+  padding-top: 30px;
+  border-top: 1px solid #f1eeea;
+}
+
+.new-obit-form__main-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* max-width: 500px; */
+  width: 80%;
+  /* height: 900px; */
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #f1eeea;
+  border-radius: 2px;
+}
+
+.new-obit-form__form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  padding-top: 0;
+  min-width: 50%;
+
+  /* width: 60%; */
+  
+}
+
+.new-obit-form__header {
+  align-self: start;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #282828;
+  margin-top: 30px;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  
+}
+
+.new-obit-form__title {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #282828;
+}
+
+.new-obit-form__input-field {
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 12px;
+  font-size: 25px;
+  line-height: 25px;
+  border: 1px solid #dcdedd;
+  border-radius: 3px;
+  width: 100%;
+  height: 40px;
+  
+}
+.new-obit-form__input-field:focus {
+  border-color: #009e74;
+  transition: all 300ms;
+  outline: 0;
+}
+
+.new-obit-form__select-field {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1px solid #dcdedd;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.new-obit-form__date-field {
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 17px;
+  border: 1px solid #dcdedd;
+  border-radius: 3px;
+  
+}
+
+.new-obit-form__select-field:focus {
+  border-color: #009e74;
+  transition: all 300ms;
+  outline: 0;
+}
+
+.new-obit-form__textarea {
+  box-sizing: border-box;
+  font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial,
+    "Liberation Sans", FreeSans, sans-serif;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1px solid #dcdedd;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.new-obit-form__textarea:focus {
+  border-color: #009e74;
+  transition: all 300ms;
+  outline: 0;
+}
+
+.new-obit-form__submit-button {
+  box-sizing: border-box;
+  background-color: #028858;
+  border: 1px solid #028858;
+  color: white;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.new-obit-form__MultiStepProgressBar {
+  margin-bottom: 10em;
+  margin-top: 5rem;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.new-obit-form__Step1 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.new-obit-form_img_preview {
+  display: block;
+  max-height: 50px;
+  width: auto;
+}
+
+.new-obit-form_options_ {
+  display: flex;
+  width: 100%;
+  background-color: #a06cd5;
+  height:50px;
+  color: white;
+  font-family: "Cormorant Garamond Semi-bold 600";
+  font-size: 2rem;
+  /* vertical-align: center; */
+  padding-left: 50px;
+  border-radius: 20px;
+  padding-right: 50px;
+  padding-top: 5px;
+}
+
+.new-obit-form__options-input-checkbox {
+  margin-right: 20px;
+}
+.new-obit-form__options-input-fields {
+  /* display: flex; */
+  /* margin-top: 5px;
+  margin-bottom: 10px; */
+  max-width: 70%;
+  background-color: white;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}

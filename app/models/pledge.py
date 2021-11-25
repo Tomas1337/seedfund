@@ -4,7 +4,6 @@ from datetime import datetime
 
 class Pledge(db.Model):
     __tablename__ = 'pledges'
-
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
     project_id = db.Column(db.Integer, db.ForeignKey(
