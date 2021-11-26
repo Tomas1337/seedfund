@@ -1,0 +1,33 @@
+version: "3.8"
+services:
+  frontend:
+    build: ./react-app
+    env_file: ./react-app/.env
+    hostname: frontend
+    networks:
+      - alaga-network
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./react-app:/react-app
+    stdin_open: true
+
+  backend:
+    build: ./app
+    env_file: .env
+    hostname: backend
+    networks:
+      - alaga-network
+    ports:
+      - "5000:5000"
+      - "5432:5432"
+    volumes:
+      - ./app:/app
+    command: gunicorn app:app -c ./app/gunicorn.conf.py
+
+networks:
+  alaga-network:
+    name: alaga-network
+    driver: bridge
+
+      
