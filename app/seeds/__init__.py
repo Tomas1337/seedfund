@@ -15,7 +15,6 @@ def seed():
     pass
     seed_users()
     seed_projects()
-    se
     # Add other seed functions here
     seed_obits()
     seed_donations()

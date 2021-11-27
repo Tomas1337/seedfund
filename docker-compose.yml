@@ -21,10 +21,23 @@ services:
       - alaga-network
     ports:
       - "5000:5000"
-      - "5432:5432"
     volumes:
       - ./app:/app
     command: gunicorn app:app -c ./app/gunicorn.conf.py
+
+  db:
+    image: postgres:12
+    env_file: .env
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5432"
+    container_name: postgres-db
+    volumes:
+      - ./init-pg.sh:/docker-entrypoint-initdb.d/init-pg.sh
+    networks:
+      - alaga-network
 
 networks:
   alaga-network:
