@@ -7,12 +7,12 @@ COPY . .
 # ENV REACT_APP_BASE_URL=https://seedfund-app.herokuapp.com/
 
 # Build our React App
-RUN npm install
+RUN npm install -g npm@latest && npm install
 RUN npm run build
 EXPOSE 3000
 
-WORKDIR /var/www
-COPY . .
+# WORKDIR /var/www
+# COPY . .
 #COPY /react-app/build/* app/static/
 #COPY --from=build-stage /react-app/build/* app/static/
 
