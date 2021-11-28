@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -eu
 psql -v ON_ERROR_STOP=1 \
-    -v PG_USER="$PG_USER" \
-    -v PG_DB="$PG_DB" \
-    -v POSTGRES_PASSWORD="'$POSTGRES_PASSWORD'" \
+    -v PG_USER="$POSTGRES_USER" \
+    -v PG_DB="$POSTGRES_DB" \
+    -v POSTGRES_PASSWORD="$POSTGRES_PASSWORD" \
 <<-EOSQL
     CREATE USER :PG_USER WITH PASSWORD :PG_PASSWORD;
     CREATE DATABASE :PG_DB;

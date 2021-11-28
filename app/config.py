@@ -5,4 +5,3 @@ class Config:
   SQLALCHEMY_TRACK_MODIFICATIONS=False
   SQLALCHEMY_DATABASE_URI=os.environ.get('DATABASE_URL')
   SQLALCHEMY_ECHO=True
-postgresql://postgres:StrongAdminP@ssw0rd@alaga-network:5432/postgres
