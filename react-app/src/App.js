@@ -42,7 +42,7 @@
       <div className="page-container">
         <div className="page-wrapper">
 
-          <BrowserRouter basename="/react-app">
+          <BrowserRouter>
             <NavBar
               authenticated={authenticated}
               setAuthenticated={setAuthenticated}
