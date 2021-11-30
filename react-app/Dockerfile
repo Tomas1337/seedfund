@@ -1,13 +1,13 @@
-FROM node:12 AS build-stage
+FROM node:12-alpine AS build-stage
 
 WORKDIR /react-app
 COPY . .
 
 # You have to set this because it should be set during build time.
-# ENV REACT_APP_BASE_URL=https://seedfund-app.herokuapp.com/
+#ENV REACT_APP_BASE_URL=http://www.alaga.tech/
 
 # Build our React App
-RUN npm install -g npm@latest && npm install
+RUN npm install
 RUN npm run build
 EXPOSE 3000
 
