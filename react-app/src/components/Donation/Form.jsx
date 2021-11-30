@@ -67,7 +67,7 @@ const Form = ({ handleClose }) => {
         variant="filled"
         required
         value={"Thank you for your donation"}
-        onChange={e => setFirstName(e.target.value)}
+        // onChange={e => setFirstName(e.target.value)}
       />
       <TextField
         label="Email"

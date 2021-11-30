@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import { NavLink, Redirect, useHistory, useParams } from "react-router-dom";
+import {Redirect, useHistory, useParams } from "react-router-dom";
 import LoadingAnimation from "../LoadingAnimation.js";
 import { dateDiffInDays, getDonationCount, fillBar } from "../../services/utils";
 import default_img from '../../assets/images/default_img620by350.png';
-import logo from '../../assets/images/android-chrome-720x620.png';
 import ObitHeader from "./ObitHeader.jsx";
-import { Button } from "@mui/material";
 
 const ObitProfile = (props) => {
   const [obit, setObit] = useState({});
@@ -21,7 +19,7 @@ const ObitProfile = (props) => {
   const spinnerRef = useRef();
   const { id } = useParams();
   const userId = props.user.id;
-  const creatorName = creator.firstname + " " + creator.lastname;
+  // const creatorName = creator.firstname + " " + creator.lastname;
 
   //check if obit belongs to user
   useEffect(() => {

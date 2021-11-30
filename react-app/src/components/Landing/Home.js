@@ -1,7 +1,7 @@
 import React from "react";
-import QuickSelectBar from "./QuickSelectBar";
-import TrendingProjectsPreview from "./TrendingProjectsPreview";
-import RecentProjectsPreview from "./RecentProjectsPreview";
+// import QuickSelectBar from "./QuickSelectBar";
+// import TrendingProjectsPreview from "./TrendingProjectsPreview";
+// import RecentProjectsPreview from "./RecentProjectsPreview";
 import TrendingObitsPreview from "./TrendingObitsPreview";
 import RecentObitsPreveiw from "./RecentObitsPreview";
 const Home = () => {

@@ -48,7 +48,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://backend:5000",
+  "proxy": "http://host.docker.internal:5000",
+  "proxyComments": "Change proxy to backend:5000 or host.docker.internal:5000 if running on docker. Else should be localhost:5000 on local machine during development",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "babel-core": "^6.26.3"

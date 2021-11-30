@@ -1,22 +1,15 @@
-import { getThemeProps } from "@material-ui/styles";
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import { FormGroup, Label, Input, Button} from "reactstrap";
-import ImageUploader from "../image-uploader";
+
 
 const Step3 = props => {
   
   const [ onlineService, setOnlineService] = useState (false);
   const [ memorialStartDate, setMemorialStartDate] = useState(new Date())
   const [ memorialEndDate, setMemorialEndDate] = useState(new Date())
-  const [ memorialStartTime, setMemorialStartTime] = useState("")
-  const [ memorialEndTime, setMemorialEndTime] = useState("")
 
   const [ financialAssistance, setFinancialAssistance ] = useState(false);
-  const [ bankClientName, setBankClientName ] = useState("")
-  const [ bankName, setBankName ] = useState("")
-  const [ bankAccountNumber, setBankAccountNumber ] = useState("")
-
   const [ donateCharity, setDonateCharity ] = useState(false);
 
   const donateCharityChangeHandler = () => {

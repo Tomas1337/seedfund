@@ -116,7 +116,8 @@ const TrendingObitsPreview = () => {
                 <div className="trending-obits__featured-card-hover-field">
                   <div className="trending-obits__featured-card-navlink">
                     <div className="trending-obits__featured-card-focusable-link">
-                      <NavLink to={"/obit/" + featured.id}>
+                      {/* <NavLink to={"/obit/" + featured.id}> */}
+                      <NavLink to={"/obit/1"}>
                         <div ref={spinnerRef} className="loadSpinner">
                           <LoadingAnimation size={"LRG"} />
                         </div>

@@ -1,12 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
-import { NavLink, Redirect, useHistory, useParams } from "react-router-dom";
-import LoadingAnimation from "../LoadingAnimation.js";
+import React, { useState } from "react";
 
 const ObitHeader = (props) => { 
 
-    const [name, setName] = useState({});
-    const [nickname, setNickname] = useState({});
-    const [shortMessage, setShortMessage] = useState({})
+    // const [name, setName] = useState({});
+    // const [nickname, setNickname] = useState({});
+    // const [shortMessage, setShortMessage] = useState({})
 
     return (
         <div className="obit-profile-header__wrapper">

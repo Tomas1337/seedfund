@@ -6,12 +6,12 @@ import { AvForm, AvField } from 'availity-reactstrap-validation'
 
 const Step1 = props => {
 
-  const [firstName, setFirstName] = useState('');
-  const [middleName, setMiddleName] = useState('');
-  const [lastName, setLastName] = useState('');
+  // const [firstName, setFirstName] = useState('');
+  // const [middleName, setMiddleName] = useState('');
+  // const [lastName, setLastName] = useState('');
   const [birthDate, setBirthDate] = useState(new Date());
   const [deathDate, setDeathDate] = useState(new Date());
-  const [email, setEmail] = useState({email: false});
+  // const [email, setEmail] = useState({email: false});
 
   if (props.currentStep !== 1) {
     return null;
@@ -28,20 +28,20 @@ const Step1 = props => {
   };
 
   // Use the submitted data to set the state
-  const handleChange = event => {
-    const { name, value } = event.target;
-    if (name === "firstName") {
-      setFirstName(value);
-    } else if (name === "lastName") {
-      setLastName(value);
-    } else if (name === "middleName") {
-      setMiddleName(value);
-    } else if (name === "setBirthDate") {
-      setBirthDate(value);
-    } else if (name === "setDeathDate") {
-      setDeathDate(value);
-    }
-  };
+  // const handleChange = event => {
+  //   const { name, value } = event.target;
+  //   if (name === "firstName") {
+  //     setFirstName(value);
+  //   } else if (name === "lastName") {
+  //     setLastName(value);
+  //   } else if (name === "middleName") {
+  //     setMiddleName(value);
+  //   } else if (name === "setBirthDate") {
+  //     setBirthDate(value);
+  //   } else if (name === "setDeathDate") {
+  //     setDeathDate(value);
+  //   }
+  // };
 
 
 

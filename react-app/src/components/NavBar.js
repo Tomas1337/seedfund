@@ -136,7 +136,7 @@ const NavBar = ({ authenticated, setAuthenticated, setCurrentUser }) => {
               </li>
               <li className="navbar__navlink-start">
                 <NavLink to="/start" exact={true} activeClassName="active">
-                  Start A Project
+                  Start An Obituary
                 </NavLink>
               </li>
             </ul>
