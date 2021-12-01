@@ -7,11 +7,13 @@ COPY . .
 #ENV REACT_APP_BASE_URL=http://www.alaga.tech/
 EXPOSE 3000
 # Build our React App
-RUN npm install
-RUN npm run build
+RUN npm install --silent
+RUN npm install react-scripts@4.0.3 -g --silent
+
+# RUN npm run build
 
 # WORKDIR /var/www
-# COPY . .
+COPY . ./
 #COPY /react-app/build/* app/static/
 #COPY --from=build-stage /react-app/build/* app/static/
 
