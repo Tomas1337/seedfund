@@ -5,6 +5,8 @@ services:
       context: ./react-app
       dockerfile: Dockerfile
     env_file: ./react-app/.env
+    environment:
+      - name=value
     hostname: frontend
     networks:
       - alaga-network
