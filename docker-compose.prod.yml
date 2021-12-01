@@ -18,7 +18,9 @@ services:
       - backend
 
   backend:
-    build: ./app
+    build: 
+      context: ./app
+      dockerfile: Dockerfile.prod
     env_file: .env
     hostname: backend
     networks:
